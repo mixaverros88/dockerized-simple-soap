@@ -15,7 +15,7 @@ public class PasswordCallbackHandler implements CallbackHandler {
 
 
     public PasswordCallbackHandler() {
-        passwords.put("mixaverros88", "mixalis1029");
+        passwords.put("test", "test123");
     }
 
     @Override
