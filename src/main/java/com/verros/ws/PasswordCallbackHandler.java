@@ -9,23 +9,23 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PasswordCallbackHandler implements CallbackHandler {
-
-    Map<String, String> passwords = new HashMap<>();
-
-
-    public PasswordCallbackHandler() {
-        passwords.put("test", "test123");
-    }
-
-    @Override
-    public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
-        for (Callback callback: callbacks) {
-
-            WSPasswordCallback pc = (WSPasswordCallback)callback;
-            String password = passwords.get( pc.getIdentifier() );
-            pc.setPassword(password);
-            return;
-        }
-    }
-}
+//public class PasswordCallbackHandler implements CallbackHandler {
+//
+//    Map<String, String> passwords = new HashMap<>();
+//
+//
+//    public PasswordCallbackHandler() {
+//        passwords.put("test", "test123");
+//    }
+//
+//    @Override
+//    public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
+//        for (Callback callback: callbacks) {
+//
+//            WSPasswordCallback pc = (WSPasswordCallback)callback;
+//            String password = passwords.get( pc.getIdentifier() );
+//            pc.setPassword(password);
+//            return;
+//        }
+//    }
+//}

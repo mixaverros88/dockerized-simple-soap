@@ -20,3 +20,8 @@ In tomcat-user.xml don't forget to add the below user
 <role rolename="manager-jmx"/>
 <user username="admin" password="password" roles="manager-gui,admin,manager-jmx,manager-script"/>
 ```
+
+After the deploy visit the following url in order to get the WSDL file
+```
+http://localhost:8080/sumws/services/sumService?wsdl
+```
