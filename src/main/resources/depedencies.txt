@@ -1,0 +1,5 @@
+cxf.version: ${cxf.version}
+javax.version: ${javax.version}
+spring.version: ${spring.version}
+javax.servlet.version: ${javax.servlet.version}
+apache.cxf.frontend.version: ${apache.cxf.frontend.version}

@@ -15,9 +15,14 @@
         <http.port>8080</http.port>
         <cxf.version>3.3.3</cxf.version>
         <javax.version>7.0</javax.version>
+        <javax.source>1.8</javax.source>
         <spring.version>4.2.0.RELEASE</spring.version>
         <javax.servlet.version>2.5</javax.servlet.version>
         <apache.cxf.frontend.version>3.3.3</apache.cxf.frontend.version>
+
+        <org.apache.maven.plugins>3.2</org.apache.maven.plugins>
+        <maven-war-plugin>2.1</maven-war-plugin>
+        <org.apache.tomcat.maven>2.2</org.apache.tomcat.maven>
     </properties>
 
 
@@ -30,6 +35,17 @@
             <properties>
                 <tomcat-server>stage-server</tomcat-server>
                 <tomcat-url>http://localhost:8080/manager/text</tomcat-url>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>production_server</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <tomcat-server>production-server</tomcat-server>
+                <tomcat-url>http://localhost:8081/manager/text</tomcat-url>
             </properties>
         </profile>
     </profiles>
@@ -112,20 +128,27 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <finalName>sumws</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.2</version>
+                <version>${org.apache.maven.plugins}</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${javax.source}</source>
+                    <target>${javax.source}</target>
                 </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.1</version>
+                <version>${maven-war-plugin}</version>
                 <configuration>
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
                 </configuration>
@@ -133,7 +156,7 @@
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
+                <version>${org.apache.tomcat.maven}</version>
                 <configuration>
                     <url>http://localhost:8080/manager/text</url>
                     <server>stage-server</server>
