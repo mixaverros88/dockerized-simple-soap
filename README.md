@@ -1,3 +1,10 @@
+[![Build Status](https://travis-ci.com/mixaverros88/simple-soap.svg?branch=master)](https://travis-ci.com/mixaverros88/simple-soap)
+![preview image](https://img.shields.io/github/followers/mixaverros88?label=Follow&style=plastic)
+![preview image](https://img.shields.io/github/forks/mixaverros88/simple-soap?style=plastic)
+![preview image](https://img.shields.io/github/stars/mixaverros88/simple-soap?style=plastic)
+![preview image](https://img.shields.io/github/watchers/mixaverros88/simple-soap?style=plastic)
+[![Known Vulnerabilities](https://snyk.io/test/github/mixaverros88/simple-soap/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/mixaverros88/simple-soap?targetFile=pom.xml)
+
 ## Docker Instructions ##
 ![preview image](https://github.com/mixaverros88/simple-soap/blob/master/icons/dockerIcon.png) In order to spin up the docker container run the following command
 ````
