@@ -19,6 +19,10 @@
         <spring.version>4.2.0.RELEASE</spring.version>
         <javax.servlet.version>2.5</javax.servlet.version>
         <apache.cxf.frontend.version>3.3.3</apache.cxf.frontend.version>
+        <commons-httpclient>3.1</commons-httpclient>
+        <commons-codec>1.9</commons-codec>
+        <maven-help-plugin>3.2.0</maven-help-plugin>
+        <junit>4.12</junit>
 
         <org.apache.maven.plugins>3.2</org.apache.maven.plugins>
         <maven-war-plugin>2.1</maven-war-plugin>
@@ -37,7 +41,6 @@
                 <tomcat-url>http://localhost:8080/manager/text</tomcat-url>
             </properties>
         </profile>
-
         <profile>
             <id>production_server</id>
             <activation>
@@ -50,7 +53,6 @@
         </profile>
     </profiles>
     <dependencies>
-
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-transports-http</artifactId>
@@ -69,12 +71,7 @@
         <dependency>
             <groupId>commons-httpclient</groupId>
             <artifactId>commons-httpclient</artifactId>
-            <version>3.1</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>1.9</version>
+            <version>${commons-httpclient}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -91,40 +88,34 @@
             <artifactId>spring-web</artifactId>
             <version>${spring.version}</version>
         </dependency>
-
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
             <version>${javax.version}</version>
             <scope>provided</scope>
         </dependency>
-
-        <dependency>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-ws-security</artifactId>
-            <version>${cxf.version}</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-httpclient</groupId>
-            <artifactId>commons-httpclient</artifactId>
-            <version>3.1</version>
-        </dependency>
-
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
-            <version>1.9</version>
+            <version>${commons-codec}</version>
         </dependency>
-
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
             <version>${javax.servlet.version}</version>
             <scope>provided</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-help-plugin</artifactId>
+            <version>${maven-help-plugin}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>

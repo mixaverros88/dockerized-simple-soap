@@ -9,9 +9,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class SumRequest {
 
-    @XmlElement(name = "num1")
+    @XmlElement(name = "number1")
     private int num1;
-    @XmlElement(name = "num2")
+    @XmlElement(name = "number2")
     private int num2;
 
     public int getNum1() {

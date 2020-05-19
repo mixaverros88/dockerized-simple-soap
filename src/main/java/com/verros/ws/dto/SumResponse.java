@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class SumResponse {
 
-    @XmlElement(name = "")
+    @XmlElement(name = "sum")
     private int result;
 
     public int getResult() {

@@ -1,3 +1,9 @@
+## Docker Instructions ##
+![preview image](https://github.com/mixaverros88/simple-soap/blob/master/icons/dockerIcon.png) In order to spin up the docker container run the following command
+````
+docker run -p 8080:8080 --name=simpleSoap  mixaverross88/java-simple-soap:1.0
+````
+
 ### :computer: Deploy instructions ###
 Use the maven plug-in (tomcat7-maven-plugin) for tomcat server in order to automatically deploy this project in your local server. You can find this plug-in in pom.xml file in order to modify with yours configurations, also don't forget to add in settings.xml your credentials for tomcat server.
 ```
