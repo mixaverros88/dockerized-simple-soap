@@ -32,6 +32,12 @@
 
     <profiles>
         <profile>
+            <id>noTests</id>
+            <properties>
+                <maven.test.skip>true</maven.test.skip>
+            </properties>
+        </profile>
+        <profile>
             <id>stage_server</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
