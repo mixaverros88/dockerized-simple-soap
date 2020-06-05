@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.com/mixaverros88/simple-soap.svg?branch=master)](https://travis-ci.com/mixaverros88/simple-soap)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mixaverros88_dockerized-simple-soap&metric=alert_status)](https://sonarcloud.io/dashboard?id=mixaverros88_dockerized-simple-soap)
+[![Build Status](https://travis-ci.com/mixaverros88/dockerized-simple-soap.svg?branch=master)](https://travis-ci.com/mixaverros88/simple-soap)
 ![preview image](https://img.shields.io/github/followers/mixaverros88?label=Follow&style=plastic)
 ![preview image](https://img.shields.io/github/forks/mixaverros88/simple-soap?style=plastic)
 ![preview image](https://img.shields.io/github/stars/mixaverros88/simple-soap?style=plastic)

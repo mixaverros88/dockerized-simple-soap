@@ -1,4 +1,4 @@
-package com.verros.ws;
+package com.verros.ws.handlers;
 
 import org.apache.wss4j.common.ext.WSPasswordCallback;
 
