@@ -16,7 +16,7 @@
         <cxf.version>3.3.3</cxf.version>
         <javax.version>7.0</javax.version>
         <javax.source>1.8</javax.source>
-        <spring.version>4.2.0.RELEASE</spring.version>
+        <spring.version>4.2.7.RELEASE</spring.version>
         <javax.servlet.version>2.5</javax.servlet.version>
         <apache.cxf.frontend.version>3.3.3</apache.cxf.frontend.version>
         <commons-httpclient>3.1</commons-httpclient>
